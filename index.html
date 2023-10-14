@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Book Librairy App</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="bigTitle">Enter Your Book Infos</h1>
+    <form id="myForm">
+      <div class="section">
+        <label class="labels" for="bookName">Book Name</label>
+        <input id="bookName" type="text" placeholder="Enter The Book Name">
+      </div>
+      <div class="section">
+        <label class="labels" for="authorName">Author Name</label>
+        <input id="authorName" type="text" placeholder="Enter The Author Name">
+      </div>
+        <div class="section">
+        <label class="labels" for="pages">Number of pages</label>
+        <input id="pages" type="text" placeholder="Enter The Number of Pages">
+      </div>
+      <div class="section">
+        <label class="labels" for="language">Language</label>
+        <input id="language" type="text" placeholder="Language of The Book">
+      </div>
+      <div class="section">
+        <label class="labels" for="status">Read/Not Read</label>
+        <input id="status" class="choice" type="checkbox">
+      </div>
+      <input id="sbt" class="btn" type="submit">
+    </form>
+  </div>
+  <div id="librairy">
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
