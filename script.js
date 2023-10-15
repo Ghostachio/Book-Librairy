@@ -7,7 +7,7 @@ let add = document.getElementById("sbt");
 let librairy = document.getElementById("librairy");
 
 let checkFields = () => {
-  if (bookName.value.length > 0 || authorName.value.length > 0 || pages.value.length > 0 || language.value.length > 0){
+  if (bookName.value.length > 0 && authorName.value.length > 0 && (pages.value.length > 0) && language.value.length > 0){
     return true;
   }else {
     return false;
@@ -26,7 +26,7 @@ let addToLibrairy = () => {
   let infoTwo = document.createElement("h3");
   let infoTwoText = document.createTextNode(authorName.value);
   let infoThree = document.createElement("h4");
-  let infoThreeText = document.createTextNode(pages.value);
+  let infoThreeText = document.createTextNode(pages.value + ' Pages');
   let infoFour = document.createElement("h4");
   let infoFourText = document.createTextNode(language.value);
   let infoFive = document.createElement("h4");
